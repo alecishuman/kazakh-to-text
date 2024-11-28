@@ -1,25 +1,47 @@
-import logo from './logo.svg';
+// src/App.js
+import React from 'react';
 import './App.css';
 
 function App() {
+  const handleClick = () => {
+    
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="app">
+      <header className="header">
+        <nav className="nav">
+          <a href="#demo">Demo</a>
+          <a href="#contribute">Contribute</a>
+          <a href="#about">About us</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </header>
+
+      <main className="main">
+        <h1>Translating Kazakh Language into text</h1>
+        <p className="subtext">
+          An enim nullam tempor sapien gravida donec enim ipsum porta justo congue magna at pretium purus pretium ligula
+        </p>
+        <button className="cta-button">Contribute to a project</button>
+      </main>
+
+      <section className="stats">
+        <div className="stat">
+          <h2>300+</h2>
+          <p>Data Used</p>
+        </div>
+        <div className="stat">
+          <h2>30%</h2>
+          <p>Accuracy</p>
+        </div>
+        <div className="stat">
+          <h2>10k</h2>
+          <p>Customer</p>
+        </div>
+      </section>
     </div>
   );
 }
 
 export default App;
+
